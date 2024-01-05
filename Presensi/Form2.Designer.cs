@@ -260,6 +260,7 @@
             Event_id.Size = new Size(127, 41);
             Event_id.TabIndex = 22;
             Event_id.Text = "Event_id";
+            Event_id.Click += Event_id_Click;
             // 
             // title
             // 
@@ -269,6 +270,7 @@
             title.Size = new Size(74, 41);
             title.TabIndex = 23;
             title.Text = "Title";
+            title.Click += this.title_Click;
             // 
             // Deskripsi
             // 
@@ -278,6 +280,7 @@
             Deskripsi.Size = new Size(138, 41);
             Deskripsi.TabIndex = 24;
             Deskripsi.Text = "Deskripsi";
+            Deskripsi.Click += this.Deskripsi_Click;
             // 
             // label2
             // 
@@ -287,6 +290,7 @@
             label2.Size = new Size(151, 41);
             label2.TabIndex = 25;
             label2.Text = "Start Time";
+            label2.Click += this.label2_Click;
             // 
             // label3
             // 
@@ -296,6 +300,7 @@
             label3.Size = new Size(141, 41);
             label3.TabIndex = 26;
             label3.Text = "End Time";
+            label3.Click += this.label3_Click;
             // 
             // dataGridViewEvents
             // 

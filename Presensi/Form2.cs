@@ -25,9 +25,33 @@ namespace Presensi
             txtUserId.ReadOnly = true;
             txtEventId.ReadOnly = true;
             AddScrolling();
+            title.Click += title_Click;
+            Deskripsi.Click += Deskripsi_Click;
+            label2.Click += label2_Click;
+            label3.Click += label3_Click;
         }
 
         private Panel panel1;
+
+        private void title_Click(object sender, EventArgs e)
+        {
+            // Logika yang ingin Anda jalankan saat label title diklik
+        }
+        private void Deskripsi_Click(object sender, EventArgs e)
+        {
+            // Logika yang ingin Anda jalankan saat label Deskripsi diklik
+        }
+        private void label2_Click(object sender, EventArgs e)
+        {
+            // Logika yang ingin Anda jalankan saat label2 diklik
+        }
+        private void label3_Click(object sender, EventArgs e)
+        {
+            // Logika yang ingin Anda jalankan saat label3 diklik
+        }
+
+
+
         private void AddScrolling()
         {
             panel1 = new Panel();
@@ -174,7 +198,6 @@ namespace Presensi
                 }
             }
         }
-
 
         private void btnEditUser_Click(object sender, EventArgs e)
         {
@@ -653,6 +676,11 @@ namespace Presensi
             {
                 MessageBox.Show("Tidak ada data untuk diekspor.");
             }
+        }
+
+        private void Event_id_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
